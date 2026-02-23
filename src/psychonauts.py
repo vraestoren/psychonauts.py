@@ -13,7 +13,7 @@ class Psychonauts:
             f"{self.api}/characters?limit={limit}").json()
         
     def get_character_by_name(self, name: str) -> dict:
-        return self.session.get
+        return self.session.get(
             f"{self.api}/characters?name={name}").json()
     
     def get_character_by_gender(self, gender: str) -> dict:
